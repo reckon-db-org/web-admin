@@ -1,2 +1,2 @@
-# web-admin
-A Web-based Adminstration Tool for ReckonDB
+# ReckonDB Web Administration and Dashboard
+ReckonDB 
