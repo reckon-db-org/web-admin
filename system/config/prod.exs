@@ -6,8 +6,10 @@ import Config
 # which you should run after static files are built and
 # before starting your production server.
 config :web_admin_web, WebAdminWeb.Endpoint,
-  url: [host: "example.com", port: 80],
-  cache_static_manifest: "priv/static/cache_manifest.json"
+  url: [host: "admin.reckon", port: 4000],
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  check_origin: ["//admin.reckon"],
+  server: true  # Enable the server
 
 # Configures Swoosh API Client
 config :swoosh, :api_client, WebAdmin.Finch

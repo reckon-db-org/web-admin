@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  web_admin:
+    build:
+      context: ../system
+      dockerfile: Dockerfile
+      args:
+        MIX_ENV: prod
+    ports:
+      - "4000:4000"
+    environment:
+      - SECRET_KEY_BASE=d8Y6naSE+Zu5qmDvQCBbmfwm5hPMrROHezFyXpU6urVBN5VFfRCnLLWXZ2Sk+gPE
+      - DATABASE_PATH=/app/data/web_admin.db
+    networks:
+      - web_admin_net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+
+networks:
+  web_admin_net:
+    driver: bridge

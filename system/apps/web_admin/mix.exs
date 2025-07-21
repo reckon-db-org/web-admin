@@ -42,7 +42,10 @@ defmodule WebAdmin.MixProject do
       {:ecto_sqlite3, ">= 0.0.0"},
       {:jason, "~> 1.2"},
       {:swoosh, "~> 1.5"},
-      {:finch, "~> 0.13"}
+      {:finch, "~> 0.13"},
+      {:protobuf, "~> 0.14.0"},
+      {:grpc, "~> 0.7.0"},
+      {:ex_esdb, "~> 0.5.1"}
     ]
   end
 
