@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <!-- Sphere with gradient -->
+  <defs>
+    <radialGradient id="sphereGradient" cx="0.3" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#4C1D95" />
+      <stop offset="40%" stop-color="#3F125B" />
+      <stop offset="80%" stop-color="#320B4F" />
+      <stop offset="100%" stop-color="#1E0A2E" />
+    </radialGradient>
+    <radialGradient id="sphereHighlight" cx="0.25" cy="0.25" r="0.3">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <!-- Main Sphere -->
+  <circle cx="30" cy="30" r="25" fill="url(#sphereGradient)" opacity="0.6"/>
+  <!-- Highlights -->
+  <ellipse cx="22" cy="22" rx="10" ry="8" fill="url(#sphereHighlight)" />
+  <ellipse cx="20" cy="20" rx="4" ry="3" fill="#FFFFFF" opacity="0.6" />
+</svg>

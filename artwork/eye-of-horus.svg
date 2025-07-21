@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+  <!-- Eye of Horus symbol -->
+  <g stroke="#B8E234" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"
+     style="opacity: 0.95;" transform="translate(8, 8)">
+    <!-- Main eye shape -->
+    <path d="M24 24 Q28 19 33 24 Q38 19 42 24 Q38 29 33 24 Q28 29 24 24 Z"/>
+    <!-- Eyebrow line -->
+    <path d="M25 19 Q33 16 41 19"/>
+    <!-- Pupil -->
+    <circle cx="33" cy="24" r="2.2" fill="#B8E234"/>
+    <!-- Teardrop marking below -->
+    <path d="M30 29 Q28 31 28 34 Q28 36 30 36 Q32 34 30 29"/>
+    <!-- Spiral curl extending from corner -->
+    <path d="M42 24 Q44 26 42 28 Q40 30 38 28 Q40 26 42 24"/>
+    <!-- Decorative lines -->
+    <path d="M38 28 Q38 32 39 36"/>
+    <path d="M34 31 Q34 35 35 39"/>
+    <!-- Additional traditional markings -->
+    <path d="M26 27 Q24 29 23 32"/>
+  </g>
+  <!-- Surface texture overlay -->
+  <ellipse cx="28" cy="29" rx="10" ry="8" fill="none" stroke="#B8E234" stroke-width="0.6" opacity="0.35"
+           stroke-dasharray="1,4" transform="rotate(-10 28 29)"/>
+  <!-- Surface depth shading -->
+  <ellipse cx="28" cy="29" rx="7" ry="5" fill="#9BCF20" opacity="0.25"/>
+</svg>
